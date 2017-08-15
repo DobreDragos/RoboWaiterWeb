@@ -40,14 +40,16 @@
     }
   },
 
-  "publishOptions": {
-    "include": [
-      "wwwroot",
-      "**/*.cshtml",
-      "appsettings.json",
-      "web.config"
-    ]
-  },
+  "publishOptions": [
+    "config.json",
+    "project.json",
+    "readme.txt",
+    "Start.bat",
+    "wwwroot/**",
+    "Views/**",
+    "**.user",
+    "**.vspscc"
+  ],
 
   "scripts": {
     "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]

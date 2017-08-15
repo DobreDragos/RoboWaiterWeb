@@ -3,3 +3,5 @@
 ################################################################################
 
 *.suo
+/RoboWaiterWeb/src/RoboWaiterWeb/bin
+/RoboWaiterWeb/src/RoboWaiterWeb/obj
