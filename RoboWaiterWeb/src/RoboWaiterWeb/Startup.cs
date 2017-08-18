@@ -57,7 +57,7 @@ namespace RoboWaiterWeb
         // Entry point for the application.
         public static void Main(string[] args)
         {
-
+            BusinessLayer.Context a = new BusinessLayer.Context(true);
             var host = new Microsoft.AspNetCore.Hosting.WebHostBuilder()
            .UseKestrel()
            .UseContentRoot(Directory.GetCurrentDirectory())
